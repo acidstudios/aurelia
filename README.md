@@ -1,38 +1,46 @@
-# AureliaWrapper
+# About Aurelia
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/aurelia_wrapper`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Hi! Aurelia is a next gen Javascript framework for mobile, desktop and web that leverages simple conventions to empower your creativity.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Include it in your Gemfile
 
 ```ruby
-gem 'aurelia_wrapper'
+gem 'aurelia'
 ```
 
-And then execute:
+And then execute Bundler:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install aurelia_wrapper
+    $ bundle install
 
 ## Usage
 
-TODO: Write usage instructions here
+Install all Aurelia dependencies with this command:
 
-## Development
+    $ rails g aurelia:install
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+This gem includes a Layout for your application, simply use this in your controllers:
+```ruby
+layout 'appaurelia'
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Or modify your current layout to include your Aurelia Application:
+```html
+<body aurelia-app="main">
+
+<%= yield %>
+
+</body>
+``` 
+Also you need to include jsmp.js in your application.js(or whatever you use):
+```javascript
+//= require jspm
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/aurelia_wrapper.
+Bug reports and pull requests are welcome on GitHub at https://github.com/acidstudios/aurelia.
 
 
 ## License
