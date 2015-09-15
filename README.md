@@ -1,6 +1,6 @@
 # About Aurelia
 
-Hi! Aurelia is a next gen Javascript framework for mobile, desktop and web that leverages simple conventions to empower your creativity.
+Hi! [Aurelia](http://www.aurelia.io) is a next gen Javascript framework for mobile, desktop and web that leverages simple conventions to empower your creativity.
 
 ## Installation
 
@@ -16,7 +16,7 @@ And then execute Bundler:
 
 ## Usage
 
-**Initializing Aurelia**
+## Initializing Aurelia
 Install all Aurelia dependencies with this command:
 
     $ rails g aurelia:install
@@ -27,7 +27,7 @@ If you want to specify a Application Layout name and a Aurelia App Name, you cou
 
 It will generate a Layout for your Rails app, also de Main .js that Aurelia uses.
 
-**Generate a Module**
+## Generate a Module
 Aurelia uses a ES6/ES7 class for our view model, also a Html file, this both files conforms a module, to create one type the following:
 
     $ rails g aurelia:module Module_Name
