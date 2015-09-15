@@ -20,23 +20,6 @@ Install all Aurelia dependencies with this command:
 
     $ rails g aurelia:install
 
-This gem includes a Layout for your application, simply use this in your controllers:
-```ruby
-layout 'appaurelia'
-```
-
-Or modify your current layout to include your Aurelia Application:
-```html
-<body aurelia-app="main">
-
-<%= yield %>
-
-</body>
-``` 
-Also you need to include jsmp.js in your application.js(or whatever you use):
-```javascript
-//= require jspm
-```
 
 ## Contributing
 

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= layout_name.capitalize %></title>
+  <%%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%%= csrf_meta_tags %>
+</head>
+<body aurelia-app="<%= mod_name %>">
+
+<%%= yield %>
+<%%= javascript_include_tag '<%= file_name %>', 'data-turbolinks-track' => true %>
+</body>
+</html>
